@@ -123,6 +123,12 @@
     opacity: 0.9;
 }
 
+.logo-unad {
+    max-width: 80px;
+    height: auto;
+    object-fit: contain;
+}
+
 
 /* Efecto hover de flotación */
 
