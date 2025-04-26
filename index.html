@@ -20,6 +20,7 @@
     <title>Ennodex -</title>
     <meta name="description" content="Gestión del conocimiento enfocada en la generación de valor y mejoramiento organizacional bajo los principios de transparencia, fundamentación científica, equidad, y sostenibilidad." />
     <link rel="canonical" href="https://www.ennodex.com/" />
+
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <meta property="og:locale" content="es_ES" />
@@ -32,6 +33,7 @@
     <meta property="article:modified_time" content="2024-11-14T13:50:05+00:00" />
     <meta property="og:image" content="https://www.ennodex.com/wp-content/uploads/2024/03/Sin-titulo-1-768x257.png" />
     <meta name="twitter:card" content="summary_large_image" />
+    <script src="https://cdn.jsdelivr.net/npm/smooth-scroll@16/dist/smooth-scroll.polyfills.min.js"></script>
     <script type="application/ld+json" class="yoast-schema-graph">
         {
             "@context": "https://schema.org",
@@ -659,29 +661,37 @@
                         <ul class="elementor-icon-list-items elementor-inline-items">
                             <li class="elementor-icon-list-item elementor-inline-item">
                                 <a href="#somos">
-
-                                    <span class="elementor-icon-list-text">Quienes Somos</span>
+                                    <span class="elementor-icon-list-text">Quiénes Somos</span>
                                 </a>
                             </li>
                             <li class="elementor-icon-list-item elementor-inline-item">
                                 <a href="#servicios">
-
                                     <span class="elementor-icon-list-text">Nuestros servicios</span>
                                 </a>
                             </li>
                             <li class="elementor-icon-list-item elementor-inline-item">
                                 <a href="#equipo">
-
                                     <span class="elementor-icon-list-text">Nuestro Equipo</span>
                                 </a>
                             </li>
                             <li class="elementor-icon-list-item elementor-inline-item">
+                                <a href="#aliados">
+                                    <span class="elementor-icon-list-text">Aliados</span>
+                                </a>
+                            </li>
+                            <li class="elementor-icon-list-item elementor-inline-item">
+                                <a href="#empresas">
+                                    <span class="elementor-icon-list-text">Empresas Asesoradas</span>
+                                </a>
+                            </li>
+                            <li class="elementor-icon-list-item elementor-inline-item">
                                 <a href="#contacto">
-
-                                    <span class="elementor-icon-list-text">Contáctenos </span>
+                                    <span class="elementor-icon-list-text">Contáctenos</span>
                                 </a>
                             </li>
                         </ul>
+
+
                     </div>
                 </div>
             </div>
@@ -1524,7 +1534,7 @@
         </div>
         <!-- Sección de Aliados -->
         <div class="bloque-aliados">
-            <section class="seccion-aliados">
+            <section id='aliados' class="seccion-aliados">
                 <h2 class="titulo-aliados">Aliados y plataformas que confían en nosotros</h2>
 
                 <!-- Swiper carrusel -->
@@ -1563,8 +1573,83 @@
         </div>
         <!-- Fin de la sección de Aliados -->
 
+        <!-- Nueva sección: Empresas Asesoradas -->
+        <section id="empresas" class="empresas-asesoradas">
+            <h2 class="titulo-empresas">Empresas asesoradas</h2>
 
+            <div class="cards-container">
 
+                <!-- Tarjeta 1 -->
+                <div class="card-empresa">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Logo_unad_color.png" alt="UNAD Logo" class="logo-empresa">
+                    <p class="servicio">Consultoría en innovación y tecnología educativa</p>
+                    <p class="testimonio">"La asesoría de Ennodex mejoró significativamente nuestros procesos de innovación."
+                    </p>
+                    <a href="#" class="btn-referencia">Solicitar referencia</a>
+                </div>
+
+                <!-- Tarjeta 2 -->
+                <div class="card-empresa">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google Logo" class="logo-empresa">
+                    <p class="servicio">Capacitación en Big Data y Machine Learning</p>
+                    <p class="testimonio">"Excelente apoyo y capacitación personalizada, recomendados."</p>
+                    <a href="#" class="btn-referencia">Solicitar referencia</a>
+                </div>
+
+                <!-- Tarjeta 3 -->
+                <div class="card-empresa">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon" class="logo-empresa">
+                    <p class="servicio">Optimización de logística en e-commerce</p>
+                    <p class="testimonio">"La asesoría de Ennodex mejoró significativamente nuestros procesos de innovación."
+                    </p>
+                    <a href="#" class="btn-referencia">Solicitar referencia</a>
+                </div>
+
+                <!-- Tarjeta 4 -->
+                <div class="card-empresa">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft" class="logo-empresa">
+                    <p class="servicio">Consultoría en transformación digital</p>
+                    <p class="testimonio">"La asesoría de Ennodex impulsó nuestro proceso de transformación digital."</p>
+                    <a href="#" class="btn-referencia">Solicitar referencia</a>
+                </div>
+
+                <!-- Tarjeta 5 -->
+                <div class="card-empresa">
+                    <img src="https://wikirate-production-storage.fra1.cdn.digitaloceanspaces.com/files/542039/32955312-medium.png" alt="Meta" class="logo-empresa">
+                    <p class="servicio">Estrategias de marketing digital</p>
+                    <p class="testimonio">"Campañas exitosas gracias a su experiencia en marketing digital."</p>
+                    <a href="#" class="btn-referencia">Solicitar referencia</a>
+                </div>
+
+                <!-- Tarjeta 6 -->
+                <div class="card-empresa">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/76/Slack_Icon.png" alt="Slack" class="logo-empresa">
+                    <p class="servicio">Optimización de comunicación interna</p>
+                    <p class="testimonio">"Mejoramos la comunicación y productividad interna gracias a Ennodex."</p>
+                    <a href="#" class="btn-referencia">Solicitar referencia</a>
+                </div>
+
+                <!-- Tarjeta 7 -->
+                <div class="card-empresa">
+                    <img src="https://cdn.connectamericas.com/sites/default/files/styles/company_public_profile_picture/public/company-1503-1602855891.png" alt="Shopify" class="logo-empresa">
+                    <p class="servicio">Integración de tiendas online personalizadas</p>
+                    <p class="testimonio">"Nuestra tienda online ahora es más eficiente y rentable."</p>
+                    <a href="#" class="btn-referencia">Solicitar referencia</a>
+                </div>
+
+                <!-- Tarjeta 8 -->
+                <div class="card-empresa">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Shopify_logo_2018.svg" alt="Shopify" class="logo-empresa">
+                    <p class="servicio">Consultoría en e-commerce y escalabilidad</p>
+                    <p class="testimonio">"Asistencia estratégica que nos ayudó a escalar operaciones."</p>
+                    <a href="#" class="btn-referencia">Solicitar referencia</a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Fin de empresas asesoradas
+   -->
 
         <div class="elementor-element elementor-element-4994a57 e-flex e-con-boxed e-con e-parent" data-id="4994a57" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}" data-core-v316-plus="true">
             <div class="e-con-inner">
@@ -2086,7 +2171,13 @@
         }());
     </script>
     <script src="js/index.js"></script>
-
+    <script>
+        const scroll = new SmoothScroll('a[href*="#"]', {
+            speed: 1000,
+            speedAsDuration: true,
+            easing: 'easeInOutCubic'
+        });
+    </script>
 </body>
 
 </html>

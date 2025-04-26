@@ -65,7 +65,7 @@
 /* Bloque contenedor */
 
 .bloque-aliados {
-    width: 100%;
+    width: 80%;
     background: #fffdf8;
     padding: 60px 20px;
     display: flex;
@@ -124,7 +124,7 @@
 }
 
 .logo-unad {
-    max-width: 80px;
+    max-width: 60px;
     height: auto;
     object-fit: contain;
 }
@@ -136,4 +136,140 @@
     opacity: 1;
     transform: scale(1.12) translateY(-6px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+
+/* ============================= */
+
+
+/* Sección: Empresas Asesoradas - Ultra Premium */
+
+
+/* ============================= */
+
+.empresas-asesoradas {
+    background: linear-gradient(135deg, #f8f9fb, #eef1f5);
+    padding: 80px 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.titulo-empresas {
+    font-size: 34px;
+    color: #222;
+    font-weight: 700;
+    margin-bottom: 50px;
+    letter-spacing: 1px;
+}
+
+
+/* Grid de tarjetas */
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 35px;
+    justify-content: center;
+    align-items: stretch;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+
+/* Tarjeta glassmorphism */
+
+.card-empresa {
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    padding: 25px 25px;
+    text-align: center;
+    display: flex;
+    width: 200px;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    height: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.card-empresa:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Logo de empresa */
+
+.logo-empresa {
+    max-width: 90px;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 20px;
+    transition: transform 0.4s ease;
+}
+
+.card-empresa:hover .logo-empresa {
+    transform: scale(1.08);
+}
+
+
+/* Nombre empresa */
+
+.nombre-empresa {
+    font-size: 22px;
+    font-weight: 700;
+    color: #333;
+    margin: 12px 0;
+}
+
+
+/* Servicio */
+
+.servicio {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+
+/* Testimonio */
+
+.testimonio {
+    font-size: 14px;
+    font-style: italic;
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    flex-grow: 1;
+}
+
+
+/* Botón moderno */
+
+.btn-referencia {
+    display: inline-block;
+    background: linear-gradient(135deg, #4f8cff, #1e64e8);
+    color: #ffffff !important;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: auto;
+    transition: background 0.4s ease, transform 0.4s ease, box-shadow 0.4s ease;
+    box-shadow: 0 4px 10px rgba(30, 100, 232, 0.3);
+    backdrop-filter: blur(5px);
+}
+
+.btn-referencia:hover {
+    background: linear-gradient(135deg, #1e64e8, #4f8cff);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(30, 100, 232, 0.5);
+}
+
+html {
+    scroll-behavior: smooth;
 }
