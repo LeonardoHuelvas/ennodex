@@ -1,0 +1,46 @@
+.elementor-widget-image img {
+    transition: transform 0.3s ease;
+}
+
+.elementor-widget-image img:hover {
+    transform: scale(1.08);
+    cursor: pointer;
+}
+
+
+/* carrusel */
+
+.elementor-image-carousel .swiper-slide img {
+    transition: transform 0.4s ease;
+    border-radius: 10px;
+}
+
+.elementor-image-carousel .swiper-slide img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+@keyframes bounce {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+.logo-enodex {
+    width: 200px;
+    max-width: 100%;
+    padding-top: 20px;
+    display: block;
+    margin: 0 auto;
+    animation: bounce 2s infinite;
+    transition: transform 0.4s ease;
+}
+
+.logo-enodex:hover {
+    transform: scale(1.1);
+}
