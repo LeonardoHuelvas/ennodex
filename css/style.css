@@ -44,3 +44,90 @@
 .logo-enodex:hover {
     transform: scale(1.1);
 }
+
+
+/* aliados */
+
+.bloque-aliados {
+    width: 100%;
+    background: #fffdf8;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/* Sección de aliados */
+
+
+/* Bloque contenedor */
+
+.bloque-aliados {
+    width: 100%;
+    background: #fffdf8;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/* Contenido centrado */
+
+.seccion-aliados {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.titulo-aliados {
+    font-size: 30px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 35px;
+    letter-spacing: 0.5px;
+}
+
+
+/* Carrusel de aliados */
+
+.aliados-swiper {
+    width: 100%;
+    padding: 10px 0 40px 0;
+}
+
+.aliados-swiper .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Estilo de cada logo */
+
+.aliados-swiper .swiper-slide img {
+    max-height: 50px;
+    /* ✅ Controlar el tamaño general de los logos */
+    width: auto;
+    /* Mantener proporción original */
+    padding: 8px;
+    margin: 0 15px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: all 0.4s ease;
+    opacity: 0.9;
+}
+
+
+/* Efecto hover de flotación */
+
+.aliados-swiper .swiper-slide img:hover {
+    opacity: 1;
+    transform: scale(1.12) translateY(-6px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}

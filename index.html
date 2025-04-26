@@ -14,13 +14,14 @@
     <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/596d8b067324b2ee0741600d/script.js"></script>
     <link rel="alternate" href="https://www.ennodex.com/en/enodex/" hreflang="en" />
     <link rel="alternate" href="https://www.ennodex.com/" hreflang="es" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <!-- This site is optimized with the Yoast SEO plugin v22.4 - https://yoast.com/wordpress/plugins/seo/ -->
     <title>Ennodex -</title>
     <meta name="description" content="Gestión del conocimiento enfocada en la generación de valor y mejoramiento organizacional bajo los principios de transparencia, fundamentación científica, equidad, y sostenibilidad." />
     <link rel="canonical" href="https://www.ennodex.com/" />
     <link rel="stylesheet" href="css/style.css" />
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <meta property="og:locale" content="es_ES" />
     <meta property="og:locale:alternate" content="en_US" />
     <meta property="og:type" content="website" />
@@ -1521,6 +1522,45 @@
 
 
         </div>
+        <!-- Sección de Aliados -->
+        <div class="bloque-aliados">
+            <section class="seccion-aliados">
+                <h2 class="titulo-aliados">Aliados y plataformas que confían en nosotros</h2>
+
+                <!-- Swiper carrusel -->
+                <div class="swiper aliados-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" alt="IBM" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/7/76/Slack_Icon.png" alt="Slack" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/WordPress_blue_logo.svg" alt="WordPress" />
+                        </div>
+                    </div>
+
+                    <!-- Opcional: navegación -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+        </div>
+        <!-- Fin de la sección de Aliados -->
+
+
+
 
         <div class="elementor-element elementor-element-4994a57 e-flex e-con-boxed e-con e-parent" data-id="4994a57" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}" data-core-v316-plus="true">
             <div class="e-con-inner">
@@ -2002,9 +2042,38 @@
         defer>
     </script>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-
-
+    <script>
+        const aliadosSwiper = new Swiper('.aliados-swiper', {
+            slidesPerView: 4,
+            spaceBetween: 30,
+            loop: true,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 2
+                },
+                640: {
+                    slidesPerView: 3
+                },
+                1024: {
+                    slidesPerView: 4
+                }
+            }
+        });
+    </script>
     <script>
         (function() {
             var expirationDate = new Date();
